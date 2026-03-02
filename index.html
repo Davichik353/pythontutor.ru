@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PythonTutor RU — тренажёр по Python</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero__content">
+        <p class="hero__label">PythonTutor RU</p>
+        <h1>Практика по Python в формате мини‑собеседования</h1>
+        <p class="hero__description">
+          Решай вопросы по синтаксису, алгоритмам и реальному коду. Получай мгновенную обратную
+          связь и отслеживай прогресс.
+        </p>
+        <button id="start-btn" class="btn btn--primary">Начать тренировку</button>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="card quiz" id="quiz-card" aria-live="polite">
+        <div class="quiz__top">
+          <span id="question-index" class="badge">Вопрос 1 / 5</span>
+          <span id="score" class="badge badge--accent">Баллы: 0</span>
+        </div>
+
+        <h2 id="question-title">Нажмите «Начать тренировку», чтобы получить первый вопрос.</h2>
+        <div id="options" class="options"></div>
+
+        <div class="quiz__actions">
+          <button id="next-btn" class="btn" disabled>Следующий вопрос</button>
+          <button id="reset-btn" class="btn btn--ghost" disabled>Пройти заново</button>
+        </div>
+
+        <p id="feedback" class="feedback"></p>
+      </section>
+
+      <aside class="card panel">
+        <h3>Темы тренировки</h3>
+        <ul>
+          <li>Типы данных и структуры</li>
+          <li>Функции и аргументы</li>
+          <li>Итерации и генераторы</li>
+          <li>Работа со строками</li>
+          <li>Базовые алгоритмы</li>
+        </ul>
+
+        <h3>Как это работает</h3>
+        <ol>
+          <li>Запускаете тренировку.</li>
+          <li>Выбираете ответ на каждый вопрос.</li>
+          <li>Сразу получаете комментарий.</li>
+          <li>В конце видите итоговый результат.</li>
+        </ol>
+      </aside>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
